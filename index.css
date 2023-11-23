@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(39, 38, 38);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+canvas:hover {
+  cursor: crosshair;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+label[for='upload-picture-input'] {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgb(223, 233, 214);
+  width: 700px;
+}
+
+#captured-colors-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 400px;
+}
+
+
+#captured-colors-title {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+#captured-colors {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 100%;
+  border: 2px solid rgb(53, 52, 52);
+  box-shadow: 1px 1px 1px rgb(53, 52, 52);
+  padding: 1rem;
+}
+
+.colors {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.colors:nth-child(1) {
+  background-color: aquamarine;
+}
+.colors:nth-child(2) {
+  background-color: rgb(49, 70, 63);
+}
+.colors:nth-child(3) {
+  background-color: rgb(127, 136, 255);
+}
+.colors:nth-child(4) {
+  background-color: rgb(255, 246, 127);
+}
+.colors:nth-child(5) {
+  background-color: rgb(229, 127, 255);
+}
+
+#main-picked-color-div {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#main-color {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+}
