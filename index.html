@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="index.js"></script>
+  <title>Pixel Color Picker</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Pixel Color Picker</h1>
+    <label for="upload-picture-input"><input type="file" id="upload-picture-input" accept="image/*"></label>
+    <canvas id="uploaded-picture-canvas">
+    </canvas>
+    <div id="captured-colors-container">
+      <div id='captured-colors-title'>COLOR PALETTE</div>
+      <div id="captured-colors">
+        <div class="colors" id="first-captured-color"></div>
+        <div class="colors" id="second-captured-color"></div>
+        <div class="colors" id="third-captured-color"></div>
+        <div class="colors" id="fourth-captured-color"></div>
+        <div class="colors" id="fifth-captured-color"></div>
+      </div>
+    </div>
+    <div id="main-picked-color-div">
+      <div id="main-color"></div>
+      <div id="color-description">
+        <div id="rgb-color">RGB: 255 255 255</div>
+        <div id="hex-color">HEX: #12512</div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
