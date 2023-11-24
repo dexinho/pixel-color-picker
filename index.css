@@ -6,6 +6,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 canvas:hover {
   cursor: crosshair;
 }
@@ -13,6 +21,7 @@ canvas:hover {
 h1 {
   width: 100%;
   text-align: center;
+  margin: 0;
 }
 
 label[for='upload-picture-input'] {
@@ -27,8 +36,8 @@ label[for='upload-picture-input'] {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 2rem;
-  margin: 2rem auto;
+  gap: 1rem;
+  margin: auto;
   padding: 2rem;
   background-color: rgb(223, 233, 214);
   width: 700px;
@@ -60,24 +69,38 @@ label[for='upload-picture-input'] {
   padding: 1rem;
 }
 
-.colors {
+.palette-colors {
   width: 60px;
   height: 60px;
   border-radius: 100%;
+  transition: scale 0.1s ease-in;
+  cursor: pointer;
+}
+
+.palette-colors:hover {
+  scale: 1.1;
+}
+
+.palette-colors:active {
+  scale: 0.9;
 }
 
 .colors:nth-child(1) {
   background-color: aquamarine;
 }
+
 .colors:nth-child(2) {
   background-color: rgb(49, 70, 63);
 }
+
 .colors:nth-child(3) {
   background-color: rgb(127, 136, 255);
 }
+
 .colors:nth-child(4) {
   background-color: rgb(255, 246, 127);
 }
+
 .colors:nth-child(5) {
   background-color: rgb(229, 127, 255);
 }
@@ -91,7 +114,7 @@ label[for='upload-picture-input'] {
   flex-wrap: wrap;
 }
 
-#main-color {
+#main-color-div {
   width: 150px;
   height: 150px;
   background-color: black;
