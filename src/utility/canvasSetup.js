@@ -11,7 +11,7 @@ export const initialCanvasSetup = () => {
   canvas.width = CANVAS_DATA.width;
   canvas.height = CANVAS_DATA.height;
 
-  CANVAS_DATA.ctx = canvas.getContext("2d");
+  CANVAS_DATA.ctx = canvas.getContext("2d", { willReadFrequently: true });
   const image = new Image();
   image.src = "./src/assets/nature.jpg";
   image.onload = () => {
